@@ -1,0 +1,162 @@
+QUESTION2
+Dim tab1(5), tab2(5), tab3(5), i As Integer
+        tab1 = {-26, 20, 13, 15, -10, 8}
+        tab2 = {13, -5, 30, 26, 10, -10}
+        For i = 0 To 5
+            If tab1(i) <= tab2(i) Then
+                tab3(i) = tab1(i)
+            Else
+                tab3(i) = tab2(i)
+            End If
+        Next
+        Console.WriteLine(tab3(0))
+        Console.WriteLine(tab3(1))
+        Console.WriteLine(tab3(2))
+        Console.WriteLine(tab3(3))
+        Console.WriteLine(tab3(4))
+        Console.WriteLine(tab3(5))
+
+QUESTION4
+Dim val1, val2, val3, i As Integer
+        val1 = 11
+        val2 = 15
+        i = 16
+        While val2 < 0
+            val1 = val1 \ 3
+            val1 = val1 + 5
+            val2 = val2 + 3
+        End While
+        val3 = val2
+        Do
+            val3 = val3 - 1
+            i = i + 1
+            If i Mod 2 = 0 Then
+                val1 = val1 + 7
+            Else
+                val1 = val1 - 7
+            End If
+        Loop Until val3 < 0
+        Console.WriteLine(val1)
+
+QUESTION5
+ Dim val1, val2, val3, i As Integer
+        val1 = 13
+        val2 = 20
+        i = 5
+        While val2 Mod 2 <> 1
+            val1 = val1 \ 4
+            val1 = val1 + 5
+            val2 = val2 + 1
+        End While
+        val3 = val2
+        Do
+            val3 = val3 - 2
+            i = i + 1
+            If i Mod 2 = 1 Then
+                val1 = val1 - 7
+            Else
+                val1 = val1 + 5
+            End If
+        Loop Until val3 < -8
+        Console.WriteLine(val1)
+
+QUESTION6
+Dim val1, val2, val3, i As Integer
+        For i = 1 To 15
+            If val1 Mod i = 1 Then
+                val2 = val2 - 3
+                val3 = val2 + 2
+            Else
+                val2 = val2 + 3
+                val3 = val3 - 2
+            End If
+        Next
+        Console.WriteLine(val2)
+        Console.WriteLine(val3)
+
+QUESTION8
+Dim val1, val2, val3 As Integer
+        val1 = 8
+        val2 = -7
+        val3 = val1 Mod val2
+        If val3 > 1 Then
+            val2 = val1 * 3
+            If val2 Mod 2 = 1 Then
+                val3 = val3 - 7
+                val2 = val2 + 8
+            ElseIf val3 Mod 2 = 0 Then
+                val2 = val2 + 5
+                val3 = val1 - 7
+            Else
+                val2 = val2 - 7
+                val3 = val2 + 4
+            End If
+        End If
+        If val2 < 10 Then
+            val3 = val2 - val1
+            val2 = val3 - val1
+        Else
+            val3 = val3 + 6
+            val2 = val2 + 6
+        End If
+        Console.WriteLine(val2)
+        Console.WriteLine(val3)
+
+
+QUESTION9
+Dim val1, val2, val3 As Integer
+        val1 = 13
+        val2 = 11
+        val3 = val1 \ val2
+        If val3 > 1 Then
+            val2 = val1 + 15
+            If val2 Mod 3 <> 0 Then
+                val2 = val3 - 9
+                val3 = val1 - 8
+            End If
+            If val3 Mod 2 = 1 Then
+                val3 = val2 \ 3
+                val3 = val3 + 2
+            End If
+        ElseIf val3 Mod 3 = 1 Then
+            val2 = val2 - 4
+            val3 = val1 + 7
+        Else
+            val2 = val2 * 3
+            val3 = val2 * 2
+        End If
+        If val2 < 8 Then
+            val3 = val2 * val1
+            val2 = val3 \ val1
+        Else
+            val3 = val3 - 5
+            val2 = val2 + 3
+        End If
+        Console.WriteLine(val3)
+        Console.WriteLine(val2)
+
+QUESTION10
+Dim tab2(10), tab(10), i, j, k, val1 As Integer
+        val1 = 10
+        j = 0
+        k = 0
+        For i = 1 To 20
+            val1 = val1 + 5
+            If val1 Mod 2 = 1 Then
+                tab(j) = val1
+                j = j + 1
+            Else
+                tab2(k) = val1
+                k = k + 1
+            End If
+        Next
+        Console.WriteLine(tab(0))
+        Console.WriteLine(tab(1))
+        Console.WriteLine(tab(2))
+        Console.WriteLine(tab(3))
+        Console.WriteLine(tab(4))
+        Console.WriteLine(tab(5))
+        Console.WriteLine(tab(6))
+        Console.WriteLine(tab(7))
+        Console.WriteLine(tab(8))
+        Console.WriteLine(tab(9))
